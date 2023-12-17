@@ -2,6 +2,8 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
    name: mrdevops
+   labels:
+     author: Abhi
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
