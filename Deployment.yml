@@ -12,7 +12,7 @@ spec:
         labels:
           app: mrdevops
       spec:
-       containers:
+        containers:
         - name: mrdevops
           image: shazabtanveer/project #image_name_dockerhub
           imagePullPolicy: Always
