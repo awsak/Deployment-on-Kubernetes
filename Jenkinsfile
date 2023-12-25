@@ -7,7 +7,7 @@ node {
      stage('ssh'){
 	sshagent(['ansible']) {
     		sh 'ssh -o StrictHostKeyChecking=no  ubuntu@4.240.84.4'
-		sh 'scp /var/lib/jenkins/workspace/pipelinei/*  ubuntu@4.240.84.4:/home/ubuntu'
+		sh 'scp /var/lib/jenkins/workspace/pipeline/*  ubuntu@4.240.84.4:/home/ubuntu'
 	}
      }
 }
