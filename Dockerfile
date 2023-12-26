@@ -1,4 +1,4 @@
-FROM :latest
+FROM centos:latest
 MAINTAINER abhishek03kadu@gmail.com
 RUN apt-get update && apt-get install -y git
 RUN mkdir /var/www/html/
