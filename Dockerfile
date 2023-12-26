@@ -10,7 +10,7 @@ MAINTAINER abhishek03kadu@gmail.com
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://github.com/jpvalery/newfoundland.git /var/www/html/
+ADD git clone https://github.com/jpvalery/newfoundland.git /var/www/html/
 WORKDIR /var/www/html/
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
